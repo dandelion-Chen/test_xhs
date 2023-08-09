@@ -71,5 +71,9 @@
     },
     "mp-qq" : {
         "usingComponents" : true
+    },
+	"mp-xhs": {
+        "usingComponents" : true,
+        "appid" : "6264bba3ecedf600015495e5"
     }
 }

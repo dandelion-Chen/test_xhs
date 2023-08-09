@@ -1,9 +1,9 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view>
-			<text class="title">{{title}}</text>
-		</view>
+		<web-view
+            src="https://t60.fat.klook.io/testXhsWebView"
+            @message="getMessage"
+        ></web-view>
 	</view>
 </template>
 
@@ -17,8 +17,17 @@
 		onLoad() {
 
 		},
+		onShareAppMessage() {
+			uni.showModal({
+				content: "onShareAppMessage"
+			})
+		},
 		methods: {
-
+			getMessage() {
+				uni.showModal({
+					content: "getMessage"
+				})
+			}
 		}
 	}
 </script>
